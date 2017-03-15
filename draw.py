@@ -3,9 +3,15 @@ from matrix import *
 
 
 def add_circle( points, cx, cy, cz, r, step ):
+    while step < 1.1:
+        x = r * math.cos(2 * math.pi * step) + cx
+        y = r * math.sin(2 * math.pi * step) + cy
+        add_point(points, x, y, cz)
+        step += 0.001
     pass
 
 def add_curve( points, x0, y0, x1, y1, x2, y2, x3, y3, step, curve_type ):
+    
     pass
 
 

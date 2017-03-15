@@ -1,12 +1,15 @@
 import math
 
 def make_bezier():
+    c = new_matrix()
     pass
 
 def make_hermite():
+    c = new_matrix()
     pass
 
 def generate_curve_coefs( p1, p2, p3, p4, t ):
+    
     pass
 
 
