@@ -20,6 +20,6 @@ transform = new_matrix()
 # print_matrix( make_rotZ(math.pi/4) )
 
 #parse_file( 'script', edges, transform, screen, color )
-add_circle(edges, 250, 250, 0, 100, 0)
+add_circle(edges, 250, 250, 0, 100, 0.1)
 draw_lines(edges, screen, color)
 display(screen)

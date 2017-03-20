@@ -1,15 +1,21 @@
 import math
 
 def make_bezier():
-    c = new_matrix()
+    return [[-1, 3, -3, 1], [3, -6, 3, 0], [-3, -3, 0, 0], [1, 0, 0, 0]]
     pass
 
 def make_hermite():
-    c = new_matrix()
+    return [[2, -3, 0, 1], [-2, 3, 0, 0], [1, -2, 1, 0], [1, -1, 0, 0]]
     pass
 
 def generate_curve_coefs( p1, p2, p3, p4, t ):
-    
+    m1 = [[p1, p2, p3, p4]]
+    if t == 'bezier':
+        m2 = make_bezier()
+    elif t == 'hermite':
+        m2 = make_hermite()
+    matrix_mult(m2, m1)
+    return m1
     pass
 
 
