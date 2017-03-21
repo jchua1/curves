@@ -1,7 +1,7 @@
 import math
 
 def make_bezier():
-    return [[-1, 3, -3, 1], [3, -6, 3, 0], [-3, -3, 0, 0], [1, 0, 0, 0]]
+    return [[-1, 3, -3, 1], [3, -6, 3, 0], [-3, 3, 0, 0], [1, 0, 0, 0]]
     pass
 
 def make_hermite():
